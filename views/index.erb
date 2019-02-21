@@ -5,6 +5,21 @@
   body {
     background-color: #99ccff
   }
+  .button {
+      background-color: #ffffff; /* white */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+    }
+
+  .button1 {border-radius: 8px;}
+
 </style>
 </HEAD>
 <BODY>
@@ -12,11 +27,11 @@
   <div> Tell me your name </div>
   <form action="/birthday">
     <input type="text" name="name">
+    <div> When's your birthday? </div>
+    <form action="/birthday">
+    <div><input type="text" name="birthday"></div>
+    <div><button type= "submit" class="button button1">Click me</button><br><div>
   </form>
-  <div> When's your birthday? </div>
-  <form action="/birthday">
-    <input type="text" name="birthday">
-  <div><input type="submit" value="Click me"></div>
-  </form>
+
 </BODY>
 </HTML>
