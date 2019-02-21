@@ -5,6 +5,7 @@
   body {
     background-color: #99ccff
   }
+
   .button {
       background-color: #ffffff; /* white */
   border: none;
@@ -20,17 +21,103 @@
 
   .button1 {border-radius: 8px;}
 
+
+/* Style The Dropdown Button */
+.dropbutton {
+  background-color: #99ccff;
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbutton {
+  background-color: #3e8e41;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
 </style>
+
 </HEAD>
 <BODY>
   <div> Welcome, legend </div>
   <div> Tell me your name </div>
   <form action="/birthday">
     <input type="text" name="name">
-    <div> When's your birthday? </div>
-    <form action="/birthday">
-    <div><input type="text" name="birthday"></div>
-    <div><button type= "submit" class="button button1">Click me</button><br><div>
+  <div> When's your birthday? </div>
+  <form action="/birthday">
+
+    <div class="dropdown">
+      <button class="dropbutton">Day</button>
+      <div class="dropdown-content">
+        <a href="#">1</a>
+        <a href="#">1</a>
+        <a href="#">1</a>
+        <a href="#">1</a>
+        <a href="#">1</a>
+        <a href="#">1</a>
+        <a href="#">1</a>
+        <a href="#">1</a>
+        <a href="#">1</a>
+        <a href="#">1</a>
+
+      </div>
+    </div>
+
+
+
+    <div class="dropdown">
+      <button class="dropbutton">Month</button>
+      <div class="dropdown-content">
+        <a href="#">January</a>
+        <a href="#">February</a>
+        <a href="#">March</a>
+        <a href="#">April</a>
+        <a href="#">May</a>
+        <a href="#">June</a>
+        <a href="#">July</a>
+        <a href="#">August</a>
+        <a href="#">September</a>
+        <a href="#">October</a>
+        <a href="#">November</a>
+        <a href="#">December</a>
+      </div>
+    </div>
+
+
+    <div><button type="submit" class="button button1">Click me</button><br><div>
   </form>
 
 </BODY>
