@@ -77,36 +77,34 @@
   <form action="/birthday" method="post">
     <input type="text" name="name">
   <div> When's your birthday? </div>
-  <form action="/birthday">
 
-    <div class="dropdown">
-      <button class="dropbutton">Day</button>
-      <div class="dropdown-content">
-        <a href="#">1</a>
+    <form action="/birthday" method="post">
+      <div>Day:
+        <input type="text" name="day">
+
+
+    Month:
+    <select name="month">
+      <option value="January">January</option>
+      <option value="February">February</option>
+      <option value="March">March</option>
+      <option value="April">April</option>
+      <option value="May">May</option>
+      <option value="June">June</option>
+      <option value="July">July</option>
+      <option value="August">August</option>
+      <option value="September">September</option>
+      <option value="October">October</option>
+      <option value="November">November</option>
+      <option value="December">December</option>
+    </select>
+  </div>
+    <input type="submit" value="Click me">
 
       </div>
     </div>
 
-    <div class="dropdown">
-      <button class="dropbutton">Month</button>
-      <div class="dropdown-content">
-        <a href="#">January</a>
-        <a href="#">February</a>
-        <a href="#">March</a>
-        <a href="#">April</a>
-        <a href="#">May</a>
-        <a href="#">June</a>
-        <a href="#">July</a>
-        <a href="#">August</a>
-        <a href="#">September</a>
-        <a href="#">October</a>
-        <a href="#">November</a>
-        <a href="#">December</a>
-      </div>
-    </div>
 
-
-    <div><button type="submit" class="button button1">Click me</button><br><div>
   </form>
 
 </BODY>
