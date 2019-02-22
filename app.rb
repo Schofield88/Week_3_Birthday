@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require './lib/birthday_calc'
 
 class Birthday < Sinatra::Base
 
@@ -9,7 +10,6 @@ class Birthday < Sinatra::Base
   end
 
   post '/birthday' do
-    p params
     session[:name] = params[:name]
     session[:day] = params[:day]
     session[:month] = params[:month]
@@ -17,9 +17,10 @@ class Birthday < Sinatra::Base
   end
 
   get '/greet' do
-    @name = session[:name]
-    @day = session[:day]
-    @month = session[:month]
+    p @name = session[:name]
+    p @day = session[:day].to_i
+    p @month = session[:month].to_i
+    p @how_long = Birthday_Calc.new(@day, @month).calculate     
     erb :birthday
   end
 
